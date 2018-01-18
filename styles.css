@@ -1,0 +1,141 @@
+body {
+  margin: auto;
+  width: 100%;
+  /*positionfixed*/
+}
+
+h1 {
+  font-family: "Courier New";
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(255, 255, 0);
+  background-color: rgb(255, 102, 153);
+  padding-left: 10px;
+  margin: 10px;
+}
+
+h2 {
+  font-family: "Courier New";
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 102, 153);
+}
+
+p {
+  font-family: "Courier New";
+}
+
+a:link {
+  font-family: "Courier New";
+  font-weight: bold;
+  color: rgb(0, 204, 255);
+  text-decoration: none;
+  margin: 5px;
+}
+
+a:visited {
+  font-family: "Courier New";
+  font-weight: bold;
+  color: rgb(0, 204, 255);
+  text-decoration: none;
+}
+
+a:hover {
+  font-family: "Courier New";
+  font-weight: bold;
+  background-color: rgb(255, 102, 153);
+  color: rgb(255, 255, 0);
+  text-decoration: none;
+  padding: 5px;
+  font-style: italic;
+}
+
+header {
+  width: 100%;
+  margin: auto;
+}
+
+#col1 {
+  width: 25%;
+  height: 120px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 25%;
+}
+
+#col2 {
+  width: 25%;
+  height: 120px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 25%;
+}
+
+footer {
+  background-color: rgb(0, 204, 255);
+  clear: left;
+  clear: right;
+  text-align: right;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+footer a:link {
+  font-family: "Courier New";
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(255, 255, 0);
+  text-decoration: none;
+  padding: 10px;
+}
+
+footer a:visited {
+  font-family: "Courier New";
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(255, 255, 0);
+  text-decoration: none;
+}
+
+footer a:hover {
+  font-weight: bold;
+  padding: 10px;
+  font-style: normal;
+}
+
+ul {
+  list-style-type: circle;
+  color: rgb(255, 102, 153);
+}
+
+ol {
+  list-style-type: lower-roman;
+  color: rgb(255, 102, 153);
+}
+
+li {
+  margin: 6px;
+}
+
+#mySketch {
+  width: 100%;
+  max-width: 850px;
+  margin: auto;
+}
+
+#mainlist {
+  color: rgb(0, 204, 255);
+  width: 600px;
+  height: 760px;
+  margin: auto;
+}
+
+#mainlist h2 {
+  text-align: center;
+}
+
+#mainlist ol li {
+  margin-left: 25px;
+  color: rgb(0, 204, 255);
+}
