@@ -1,0 +1,155 @@
+/* Mobile first! This is the mobile CSS! */
+
+/* setting the image sizes! */
+
+img {
+  width: 100%;
+  height: 100%;
+  max-width: 180px;
+  opacity: 0.7;
+}
+
+/* centering the images element */
+
+#images {
+  width: 100%;
+  max-width: 190px;
+  text-align: center;
+  margin: auto;
+}
+
+/* pullin' a font! */
+
+@font-face {
+  font-family: bellota;
+  src: url(bellota.otf);
+}
+
+/* h1 styling */
+
+h1 {
+  font-family: bellota;
+  font-size: 20px;
+  color: #733449;
+  margin-left: 25px;
+}
+
+/* captions styling */
+
+#caption {
+  width: 80%;
+  max-width: 400px;
+  font-family: bellota;
+  font-size: 12px;
+  margin-left: auto;
+  margin-bottom: 60px;
+  margin-right: auto;
+  display: none;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+/* caption h2 styling */
+
+#caption h2 {
+  font-family: bellota;
+  font-size: 14px;
+  margin-left: 25px;
+  color: #733449;
+}
+
+/* caption p styling */
+
+#caption p {
+  font-family: bellota;
+  font-size: 12px;
+  margin-left: 25px;
+  color: rgb(255, 128, 170);
+}
+
+/* these are the things that are different for computers */
+
+@media only screen and (min-width: 768px) {
+  /* picture sizing */
+  img {
+    width: 100%;
+    max-width: 288px;
+  }
+  /* centering the images element */
+  #images {
+    width: 100%;
+    text-align: center;
+    max-width: 1100px;
+    margin: auto;
+  }
+}
+
+/* footer positioning */
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  background-color: #733449;
+}
+
+/* styling footer links */
+
+footer a:link {
+  color: #CCCCCC;
+  font-family: bellota;
+  text-decoration: none;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+/* styling footer links */
+
+footer a:visited {
+  color: #CCCCCC;
+  font-family: bellota;
+  text-decoration: none;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+/* styling footer links - hover */
+
+footer a:hover {
+  color: #BC7581;
+  font-family: bellota;
+  text-decoration: none;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+/* captions styling */
+
+#caption {
+  width: 80%;
+  max-width: 600px;
+  display: none;
+  color: rgb(255, 128, 170);
+  background-color: rgb(255, 230, 242);
+  padding: 25px;
+  border-radius: 25px;
+  font-size: 17px;
+}
+
+/* caption h2 styling */
+
+#caption h2 {
+  font-family: bellota;
+  font-size: 25px;
+  margin-left: 25px;
+  color: #733449;
+}
+
+/* caption p styling */
+
+#caption p {
+  font-family: bellota;
+  font-size: 17px;
+  margin-left: 25px;
+  color: rgb(255, 128, 170);
+}
