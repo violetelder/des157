@@ -1,0 +1,525 @@
+/*I originally was focused on both animation and drag-and-drop functionality, but somehere along the line, while I was formatting everything, my drag-and-drops stopped working, and I couldn't figure out why! It didn't occur to me to ask for help on canvas until I had already sunk a couple hours into troubleshooting and decided to just focus on animations instead. I think I cleared out all the code from the drag-and-drops, but it's possible I missed some spare code that is no longer necessary!*/
+
+/*body sizing*/
+
+body {
+  width: 100%;
+  max-width: 1366px;
+}
+
+/*header width and centering*/
+
+header {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  height: 100px;
+}
+
+/*setting up the header animation*/
+
+@keyframes h1move {
+  from {
+    left: -690px;
+    color: cornflowerblue;
+  }
+  to {
+    left: 282px;
+    color: deeppink;
+  }
+}
+
+/*h1 styling*/
+
+h1 {
+  color: deeppink;
+  font-family: monospace;
+  position: fixed;
+  animation-name: h1move;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+/*setting up the h1 animation*/
+
+@keyframes h2move {
+  0% {
+    top: -80px;
+    left: 30px;
+    color: deeppink;
+    transform: rotate(7deg);
+  }
+  25% {
+    top: 40px;
+    left: 110px;
+    color: cornflowerblue;
+    transform: rotate(-7deg);
+  }
+  50% {
+    top: 150px;
+    left: 20px;
+    color: deeppink;
+    transform: rotate(7deg);
+  }
+  75% {
+    top: 300px;
+    left: 140px;
+    color: cornflowerblue;
+    transform: rotate(-7deg);
+  }
+  100% {
+    top: 500px;
+    left: -200px;
+    color: deeppink;
+    transform: rotate(7deg);
+  }
+}
+
+/*h2 styling*/
+
+h2 {
+  color: deeppink;
+  font-family: monospace;
+  position: fixed;
+  width: 200px;
+  left: 2000px;
+  animation-name: h2move;
+  animation-duration: 5s;
+  animation-delay: 5s;
+  animation-timing-function: ease-in-out;
+}
+
+/*"whee" animation*/
+
+@keyframes h2flips {
+  0% {
+    left: -200px;
+    color: deeppink;
+  }
+  25% {
+    left: 300px;
+    color: cornflowerblue;
+    transform: rotate(90deg);
+  }
+  50% {
+    left: 600px;
+    color: deeppink;
+    transform: rotate(180deg);
+  }
+  75% {
+    left: 900px;
+    color: cornflowerblue;
+    transform: rotate(270deg);
+  }
+  100% {
+    left: 1400px;
+    color: deeppink;
+    transform: rotate(360deg);
+  }
+}
+
+/*"whee" styling*/
+
+#flips {
+  color: deeppink;
+  font-family: monospace;
+  position: fixed;
+  width: 200px;
+  left: 2000px;
+  animation-name: h2flips;
+  animation-duration: 5s;
+  animation-delay: 9s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+}
+
+/*"shrug" animation*/
+
+@keyframes h2shrug {
+  0% {
+    top: -20px;
+    left: 800px;
+    color: yellow;
+  }
+  25% {
+    top: 100px;
+    left: 900px;
+    color: cornflowerblue;
+    transform: rotate(90deg);
+  }
+  50% {
+    top: 300px;
+    left: 1000px;
+    color: deeppink;
+    transform: rotate(180deg);
+  }
+  75% {
+    top: 400px;
+    left: 1200px;
+    color: cornflowerblue;
+    transform: rotate(270deg);
+  }
+  100% {
+    top: 600px;
+    left: 1400px;
+    color: yellow;
+    transform: rotate(360deg);
+  }
+}
+
+/*"shrug" styling*/
+
+#shrug {
+  color: deeppink;
+  font-family: monospace;
+  position: fixed;
+  width: 200px;
+  left: 2000px;
+  animation-name: h2shrug;
+  animation-duration: 5s;
+  animation-delay: 6s;
+  animation-timing-function: linear;
+}
+
+/*nav styling*/
+
+nav {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+/*list styling*/
+
+nav li {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 60px;
+  height: 60px;
+  position: relative;
+}
+
+/*setting up the nav animation*/
+
+@keyframes navmove1 {
+  from {
+    top: -400px;
+  }
+  to {
+    top: 270px;
+  }
+}
+
+/*placing each image within the nav*/
+
+#lilobject1 {
+  top: 270px;
+  animation-name: navmove1;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+}
+
+/*setting up the nav animation*/
+
+@keyframes navmove2 {
+  from {
+    top: -400px;
+  }
+  to {
+    top: 240px;
+  }
+}
+
+/*placing each image within the nav*/
+
+#lilobject2 {
+  top: 240px;
+  animation-name: navmove2;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+/*setting up the nav animation*/
+
+@keyframes navmove3 {
+  from {
+    top: -400px;
+  }
+  to {
+    top: 400px;
+  }
+}
+
+/*placing each image within the nav*/
+
+#lilobject3 {
+  top: 400px;
+  animation-name: navmove3;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+
+/*setting up the nav animation*/
+
+@keyframes navmove4 {
+  from {
+    top: -400px;
+  }
+  to {
+    top: 240px;
+  }
+}
+
+/*placing each image within the nav*/
+
+#lilobject4 {
+  top: 240px;
+  animation-name: navmove4;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+/*setting up the nav animation*/
+
+@keyframes navmove5 {
+  from {
+    top: -400px;
+  }
+  to {
+    top: 350px;
+  }
+}
+
+/*placing each image within the nav*/
+
+#lilobject5 {
+  top: 350px;
+  animation-name: navmove5;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+}
+
+/*setting up the nav animation*/
+
+@keyframes navmove6 {
+  from {
+    top: -400px;
+  }
+  to {
+    top: 330px;
+  }
+}
+
+/*placing each image within the nav*/
+
+#lilobject6 {
+  top: 330px;
+  animation-name: navmove6;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+/*setting up the nav animation*/
+
+@keyframes navmove7 {
+  from {
+    top: -400px;
+  }
+  to {
+    top: 370px;
+  }
+}
+
+/*placing each image within the nav*/
+
+#lilobject7 {
+  top: 370px;
+  animation-name: navmove7;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+
+/*setting up the nav animation*/
+
+@keyframes navmove8 {
+  from {
+    top: -400px;
+  }
+  to {
+    top: 290px;
+  }
+}
+
+/*placing each image within the nav*/
+
+#lilobject8 {
+  top: 290px;
+  animation-name: navmove8;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+/*css transition on the images*/
+
+nav img {
+  width: 60px;
+  transition: width 1s, transform 1s;
+}
+
+/*css transition on the images: activate; set cursor to pointer to communicate that this can be clicked*/
+
+nav img:hover {
+  transform: rotate(10deg);
+  width: 65px;
+  cursor: pointer;
+}
+
+/*setting up the desk animation*/
+
+@keyframes deskmove {
+  from {
+    bottom: -800px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+
+/*background positioning*/
+
+#desktop {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  animation-name: deskmove;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+/*background positioning*/
+
+#desktop img {
+  width: 100%;
+  max-width: 1000px;
+}
+
+/*setting up the footer animation*/
+
+@keyframes footermove {
+  from {
+    width: 0%;
+    background-color: deeppink;
+  }
+  to {
+    width: 100%;
+    background-color: cornflowerblue;
+  }
+}
+
+/*container for the containers*/
+#drapanddrop{
+  width:500px;
+  margin:auto;
+}
+
+/*h3 styling*/
+h3{
+color:antiquewhite;
+}
+
+/*set container width*/
+#container1{
+  width:200px;
+  background-color:cornflowerblue;
+  color:antiquewhite;
+  padding:1px;
+  border-radius:10px;
+  float:left;
+  clear:left;
+  margin-top:-100px;
+  margin-left:100px;
+  text-align:center;
+}
+
+/*cursor change and background change to communicacte draggable*/
+#container1:hover{
+  cursor:pointer;
+  background-color:deeppink;
+}
+
+/*set container2 width*/
+#target{
+  width:200px;
+  height:100px;
+  background-color:deeppink;
+  float:right;
+  clear:right;
+  margin-top:-100px;
+  margin-right:100px;
+  padding:1px;
+  border-radius:10px;
+  text-align:center;
+  cursor:pointer;
+}
+
+/*cursor change to communicacte end spot*/
+#target:hover{
+  cursor:pointer;
+  background-color:cornflowerblue;
+}
+
+/*footer fixing*/
+
+footer {
+  width: 100%;
+  height: 15px;
+  position: fixed;
+  background-color: cornflowerblue;
+  bottom: 0px;
+  animation-name: footermove;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes linkchange {
+  from {
+    color: deeppink;
+  }
+  to {
+    color: yellow;
+  }
+}
+
+footer a:link {
+  color: yellow;
+  font-family: monospace;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 15px;
+  padding-right: 50px;
+  animation-name: linkchange;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+footer a:visited {
+  color: yellow;
+  font-family: monospace;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 15px;
+  padding-right: 50px;
+}
+
+footer a:hover {
+  color: antiquewhite;
+  font-family: monospace;
+  font-style: normal;
+  font-size: 15px;
+  padding-right: 50px;
+}
