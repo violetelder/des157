@@ -257,3 +257,53 @@ em {
   padding:10px;
   margin-bottom:20px;
 }
+
+.moodboards{
+  width:100%;
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+  margin-bottom:80px;
+}
+
+.moodboards ul{
+  list-style-type:none;
+}
+
+.moodboards li{
+  display:inline-block;
+  color:#ffccff;
+  font-family:"Arial";
+  font-size:12px;
+}
+
+.moodboards a:link{
+  padding:0px;
+  margin:0px;
+
+}
+
+.moodboards a:hover{
+  opacity:0.5;
+}
+
+#brief{
+  width:70%;
+  max-width:800px;
+  background-color:#ffccff;
+  border-radius:20px;
+  padding:30px;
+  margin-right:auto;
+  margin-bottom:40px;
+  margin-left:auto;
+}
+
+#brief p{
+  background-color:rgba(255, 255, 204,0.7);
+  border-radius:20px;
+  padding:10px;
+  margin:10px;
+  font-family:"Arial";
+  font-size:14px;
+  color:rgb(255, 102, 153);
+}

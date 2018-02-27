@@ -473,6 +473,47 @@ color:antiquewhite;
   background-color:cornflowerblue;
 }
 
+/*set container width*/
+#container2a{
+  width:200px;
+  background-color:cornflowerblue;
+  color:antiquewhite;
+  padding:1px;
+  border-radius:10px;
+  float:left;
+  clear:left;
+  margin-top:-100px;
+  margin-left:100px;
+  text-align:center;
+}
+
+/*cursor change and background change to communicacte draggable*/
+#container2a:hover{
+  cursor:pointer;
+  background-color:deeppink;
+}
+
+/*set container2 width*/
+#target{
+  width:200px;
+  height:100px;
+  background-color:deeppink;
+  float:right;
+  clear:right;
+  margin-top:-100px;
+  margin-right:100px;
+  padding:1px;
+  border-radius:10px;
+  text-align:center;
+  cursor:pointer;
+}
+
+/*cursor change to communicacte end spot*/
+#target:hover{
+  cursor:pointer;
+  background-color:cornflowerblue;
+}
+
 /*footer fixing*/
 
 footer {
