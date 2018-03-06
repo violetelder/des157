@@ -348,3 +348,19 @@ em {
   margin-bottom:20px;
   color:deeppink;
 }
+
+#compslist{
+  font-family:"Arial";
+  width:100%;
+  max-width:856px;
+  margin:auto;
+}
+
+#compslist ul{
+  width:100%;
+  max-width:856px;
+  margin:auto;
+  list-style-type:none;
+  margin-bottom:20px;
+  text-align:center;
+}
