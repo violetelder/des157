@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://meyerweb.com/eric/tools/css/reset/reset.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+  <title>LocalCare (audience test)</title>
+</head>
+
+<body>
+
+  <div id='map'></div>
+
+  <section id="overlay">
+    <div id="welcome">
+      <span id="close">&otimes;</span>
+      <h2>Welcome to LocalCare!</h2>
+      <p>Self-care and treatment are complicated and personal things! Everybody benefits from different techniques, and often our self-care has to be tailored to our locations!</p>
+      <p>Davis has a lot of wonderful things to offer, but it can be hard to find the things that might be helpful to you in the process of taking care of yourself. With LocalCare (or Help-Yelp) you can find self-care and treatment solutions and suggestions
+        from around Davis, supplied by locals!</p>
+      <p>Self-care is personal! Not every suggestion or tip you find here will work for you, and that's okay! Take what you need, and leave the rest!</p>
+    </div>
+  </section>
+
+  <section id="sidebar">
+    <h1>LocalCare</h1>
+    <div id="info">
+      <p>i</p>
+    </div>
+    <h2>community comments</h2>
+    <ul>
+      <div id="results">
+        <li id="myTip"></li>
+      </div>
+      <li>I love biking everywhere. To the parks, the trail towards the farms in West Davis, and seeing the sheep and beautiful Davis sunset. - Demi</li>
+      <li>If you have a backyard, go sit in it and drink tea! - Tara</li>
+      <li>I like to get floral or herbal drinks from some of the nice coffee shops in Davis. Temple has a really nice peppermint tea called Bliss. It's pretty calming and feels luxurious. And Mishka's has a rose latte, I think! - Anon</li>
+      <li>Taking showers. Sounds easy, often isn't. Especially helpful during the hot Davis summers. - T</li>
+      <li>The dog statues in the Greenbelt always make me happy. :) They're just so sweet! - Anon</li>
+      <li>Now that I have a car, one of my favorite things to do is drive back to West Village at night to the very edge, right before the fields, and just park there with the windows open. It smells so nice. Driving through campus at night is nice, too.
+        Just be careful and safe! - Violet</li>
+      <li>Sometimes, when I have enough time after class, I just walk home from school. I live about a mile away from campus, in North Davis, and it's a safe walk in the daytime. It's really nice in the spring, especially. - Anon</li>
+      <li>Go sit by the cows! - G</li>
+      <li>Having a car on campus has really helped my anxiety. I always know I have a place I can go to during the day that no one else can go. - Anonymous</li>
+      <li>I like going into the emptier buildings, the ones with only smaller lecture rooms and a lot of offices. They're quiet and normally cleaner than a lot of other buldings on campus. Buildings like Veihmeyer and Hunt? - El</li>
+      <li>Buy yourself a delicious drink while you do homework. - Tara</li>
+      <li>Go see the Therapy Fluffies! - Anonymous</li>
+      <li>I love napping in the fields by the Arboretum gazebo! - Jess</li>
+    </ul>
+    <h2>share your tips!</h2>
+    <form name="f">
+      <div>
+        <label for="yourName">your name (if you want)</label>
+        <input type="text" id="yourName" required>
+      </div>
+      <div>
+        <label for="yourTip">your self-care tip</label>
+        <textarea name="yourTip" form_id="f"></textarea>
+      </div>
+        <div>
+          <input type="submit" value="share your tip!" />
+        </div>
+    </form>
+  </section>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

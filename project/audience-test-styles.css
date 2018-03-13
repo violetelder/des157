@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700|Rozha+One');
+body {
+  margin: auto;
+  width: 100%;
+}
+
+h1 {
+  font-size: 45px;
+  padding: 10px;
+  text-align: left;
+  color: #ffcc00;
+  font-family: "Rozha One";
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 10px;
+  font-family: "Rozha One";
+  color:#80aaff;
+}
+
+p{
+  font-family:"Roboto";
+  line-height:1.4;
+  margin-bottom:20px;
+}
+
+#audience-test{
+  width:80%;
+  max-width:800px;
+  margin:auto;
+  display:none;
+}
+
+ol{
+list-style-type:decimal;
+margin-bottom:10px;
+background-color:#ffe680;
+border-radius:20px;
+padding:20px;
+width:420px;
+}
+
+li {
+  font-family:"Roboto";
+  color: black;
+  line-height: 1.2;
+  margin-left:20px;
+}
+
+a:link{
+  color:#80aaff;
+  text-decoration:none;
+}
+
+a:visited{
+  color:#80aaff;
+}
+
+a:hover{
+  background-color: #ffcc00;
+  color:white;
+}
+
+form{
+  font-family:"Roboto";
+  color: black;
+  line-height: 1.2;
+  width:200px;
+  margin:auto;
+}
+
+input[type="text"] {
+  width:200px;
+  margin: 1px;
+  border: none;
+  border-radius: 1px;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #ffff66;
+  color: #80aaff;
+  padding:3px;
+  font-family: "Roboto";
+}
+
+input[type="text"]:focus {
+  color: #ffff66;
+  background-color: #80aaff;
+}
+
+input[type="submit"] {
+  margin-top: 8px;
+  margin-left: 1px;
+  margin-bottom: 1px;
+  margin-right: 1px;
+  border: none;
+  /*remove default*/
+  border-radius: 8px;
+  border-bottom: #ffcc00 solid;
+  background-color: #ffff66;
+  color: rgb(102, 153, 255);
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  padding:3px;
+}
