@@ -369,3 +369,29 @@ em {
   margin-bottom:20px;
   text-align:center;
 }
+
+#audience-test-results{
+width:100%;
+max-width:600px;
+margin:auto;
+}
+
+#audience-test-results h3{
+color:deeppink;
+font-family:"Courier New";
+font-size:18px;
+margin-top:20px;
+margin-bottom:8px;
+text-align:right;
+}
+
+#audience-test-results p{
+  font-family:"Arial";
+  font-size:16px;
+  line-height:1.3;
+  margin-bottom:15px;
+}
+
+#audience-test-results img{
+  margin-bottom:10px;
+}
