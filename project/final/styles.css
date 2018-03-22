@@ -1,0 +1,425 @@
+/*import font*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700|Rozha+One');
+
+/*center everything*/
+body {
+  margin: auto;
+  width: 100%;
+}
+
+/*center everything*/
+header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background:white;
+}
+
+/*h1 styling*/
+h1 {
+  font-size: 40px;
+  padding: 10px;
+  text-align: left;
+  color: #ffcc00;
+  font-family: "Rozha One";
+}
+
+/*map styling*/
+#map {
+  position: absolute;
+  top: 60px;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+}
+
+/*pop-up styling*/
+.mapboxgl-popup {
+  max-width: 400px;
+}
+
+/*pop-up styling*/
+.mapboxgl-popup-content {
+  text-align: left;
+  font-family: 'Roboto';
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/*pop-up styling*/
+.mapboxgl-popup-content h2 {
+  text-align: left;
+  font-family: "Rozha One";
+  font-size: 18px;
+  color: #ffcc00;
+}
+
+/*pop-up styling*/
+.mapboxgl-popup-content h3 {
+  text-align: right;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 12px;
+  font-style: italic;
+  color: #ffcc00;
+}
+
+/*pop-up styling*/
+.mapboxgl-popup-content h4 {
+  text-align: left;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 12px;
+  color: #ffcc00;
+}
+
+/*pop-up styling*/
+.mapboxgl-popup-content p {
+  text-align: left;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 12px;
+  color: #6699ff;
+}
+
+/*overlay styling*/
+#overlay {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  top: 0px;
+  left: 50%;
+  position: absolute;
+  z-index:3;
+}
+
+/*intro message styling*/
+#welcome {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(102, 153, 255, 0.8);
+  color: white;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/*intro message styling*/
+#welcome p {
+  margin-bottom: 10px;
+}
+
+/*intro message styling*/
+#welcome p:nth-child(5) {
+  margin-bottom: 0px;
+}
+
+/*intro message styling*/
+#close {
+  position: absolute;
+  text-align: right;
+  width: 100%;
+  max-width: 500px;
+  font-size: 20px;
+}
+
+/*intro message styling*/
+h2 {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-family: "Rozha One";
+}
+
+/*info button styling*/
+#info {
+  background-color: rgba(102, 153, 255, 0.8);
+  color: white;
+  font-size: 20px;
+  width: 20px;
+  height:20px;
+  padding: 5px;
+  border-radius: 30px;
+  font-style: italic;
+  text-align: center;
+  position: absolute;
+  left: 220px;
+  top:15px;
+}
+
+/*tip submit button styling*/
+#tipsubmission{
+  position:absolute;
+  top:10px;
+  right:10px;
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: 1.2;
+  font-size:15px;
+  color: white;
+  border: none; /*remove default*/
+  padding:8px;
+  border-radius: 10px;
+  box-shadow: 0 5px rgba(0, 68, 204,0.8);
+  background-color: rgba(102, 153, 255, 0.8);
+}
+
+/*tip submit button styling*/
+#tipsubmission:active {
+  background-color: rgba(102, 153, 255, 0.8);
+  box-shadow: 0 3px rgb(0, 68, 204);
+  transform: translateY(4px);
+}
+
+/*tip submit overlay styling*/
+#tipsubmitoverlay{
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  top: 0px;
+  left: 50%;
+  position: absolute;
+  display:none;
+}
+
+/*tip submit overlay styling*/
+#tipsubmitform{
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(102, 153, 255, 0.8);
+  color: white;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/*tip submit overlay styling*/
+#tipsubmitform p{
+  margin-top:20px;
+  margin-bottom:10px;
+}
+
+/*tip submit overlay styling*/
+#tipsubmitform a:link{
+  text-decoration:none;
+  color: #ffcc00;
+}
+
+/*tip submit overlay styling*/
+#tipsubmitform a:visited{
+  text-decoration:none;
+  color: #ffcc00;
+}
+
+/*tip submit overlay styling*/
+#tipsubmitform a:hover{
+  text-decoration:none;
+  color: white;
+}
+
+/*tip submit overlay styling*/
+#close2 {
+  position: absolute;
+  text-align: right;
+  width: 100%;
+  max-width: 400px;
+  font-size: 20px;
+}
+
+/*legend styling*/
+#legend{
+  position:absolute;
+  bottom:40px;
+  left:20px;
+  z-index:3;
+  background-color: rgba(102, 153, 255, 0.8);
+  border-radius: 20px;
+  padding: 20px;
+  width:105px;
+}
+
+/*legend styling*/
+#legend li{
+  display:inline-block;
+}
+
+/*legend styling*/
+#legend h3{
+  font-family: "Rozha One";
+  color:white;
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+/*legend styling*/
+#legend p{
+  font-family: "Roboto";
+  font-weight: 500;
+  color:white;
+  font-size:12px;
+  line-height:1.5;
+}
+
+/*adding question mark to click on here*/
+#questionmark{
+  background-color:rgba(255, 255, 255,0.8);
+  color: rgb(102, 153, 255);
+  font-size: 19px;
+  width: 20px;
+  height:20px;
+  padding: 4px;
+  border-radius: 30px;
+  text-align: center;
+  position: absolute;
+  left:100px;
+  top:12px;
+  font-family: "Rozha One";
+}
+
+/*styling the legend info and overlay*/
+#legendoverlay {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  top: 0px;
+  left: 50%;
+  position: absolute;
+  display:none;
+}
+
+/*styling the legend info and overlay*/
+#legendinformation {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(102, 153, 255, 0.8);
+  color: white;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/*styling the legend info and overlay*/
+#close3 {
+  position: absolute;
+  text-align: right;
+  width: 100%;
+  max-width: 400px;
+  font-size: 20px;
+}
+
+/*legend button styling*/
+input[type="text"] {
+  background-color: white;
+  color: #ffcc00;
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/*legend button styling*/
+input[type="text"]:focus {
+  background-color: white;
+  color: rgb(102, 153, 255);
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/*submission button styling*/
+input[type="reset"] {
+  margin: 1px;
+  border: none;
+  /*remove default*/
+  border-radius: 8px;
+  border-bottom: #ffcc00 solid;
+  font-size: 15px;
+  background-color: #ffe680;
+  color: rgb(102, 153, 255);
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/*submission button styling*/
+input[type="reset"]:hover {
+  background-color: #ffdb4d;
+}
+
+/*submission button styling*/
+input[type="submit"] {
+  margin: 1px;
+  border: none;
+  /*remove default*/
+  border-radius: 8px;
+  border-bottom: #ffcc00 solid;
+  font-size: 15px;
+  background-color: #ffe680;
+  color: rgb(102, 153, 255);
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/*submission button styling*/
+input[type="submit"]:hover {
+  background-color: #ffdb4d;
+}
+
+/*footer styling*/
+footer{
+  position:fixed;
+  bottom:0px;
+  right:280px;
+  width:100%;
+  text-align:right;
+  z-index:5;
+}
+
+/*footer styling*/
+footer a:link{
+  color: #ffcc00;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 1.2;
+  font-size:10px;
+  text-decoration:none;
+}
+
+/*footer styling*/
+footer a:visited{
+  color: #ffcc00;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 1.2;
+  font-size:10px;
+  text-decoration:none;
+}
+
+/*footer styling*/
+footer a:hover{
+  color: #fff5cc;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 1.2;
+  font-size:10px;
+  text-decoration:none;
+}

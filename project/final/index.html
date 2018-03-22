@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://meyerweb.com/eric/tools/css/reset/reset.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+  <title>LocalCare</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>LocalCare</h1>
+    <div id="info">i</div>
+    <button id="tipsubmission" onclick="submissionwarning()">Submit your own tip!</button>
+  </header>
+
+  <div id="legend">
+    <span id="questionmark">?</span>
+    <h3>Legend</h3>
+    <ul>
+      <li><img src="lowenergyicon.svg" alt="this is the icon for low energy self-care activities, the icon is by mapbox"></li>
+    <li><p>Low energy</p></li> <li>     </li>
+    <li><img src="medenergyicon.svg" alt="this is the icon for medium energy self-care activities, the icon is by mapbox"></li>
+  <li><p>Medium energy</p></li>
+    <li><img src="highenergyicon.svg" alt="this is the icon for high energy self-care activities, the icon is by mapbox"></li>
+  <li><p>High energy</p></li>
+  </ul>
+  </div>
+
+  <div id='map'></div>
+
+  <section id="overlay">
+    <div id="welcome">
+      <span id="close">&otimes;</span>
+      <h2>Welcome to LocalCare!</h2>
+      <p>Self-care and treatment are complicated and personal things! Everybody benefits from different techniques, and often our self-care has to be tailored to our locations!</p>
+      <p>Davis has a lot of wonderful things to offer, but it can be hard to find the things that might be helpful to you in the process of taking care of yourself. With LocalCare, you can browse self-care and treatment solutions and suggestions from around
+        Davis, supplied by locals!</p>
+      <p>Self-care is personal! Not every suggestion or tip you find here will work for you, and that's okay! Take what you need, and leave the rest!</p>
+    </div>
+  </section>
+
+  <section id="tipsubmitoverlay">
+    <div id="tipsubmitform">
+      <span id="close2">&otimes;</span>
+      <h2>Submit your tip!</h2>
+      <form action="mailto:violetelderdesign@gmail.com" method="post" enctype="text/plain">
+        What's your name (or pseudonym)?<br>
+        <input type="text" name="name" size="30"><br> What's your self-care tip or trick?<br>
+        <input type="text" name="comment" size="40"><br> Where in Davis do you go to do it?<br>
+        <input type="text" name="place" size="30"><br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+      </form>
+      <p>This feature isn't available yet. If you'd like to submit your own tip, feel free to <a href="mailto:violetelderdesign@gmail.com?Subject=LocalCare%20addition" target="_top">email me!</a></p>
+    </div>
+  </section>
+
+  <section id="legendoverlay">
+    <div id="legendinformation">
+      <span id="close3">&otimes;</span>
+      <h2>What's all this about energy levels?</h2>
+      <p>Our energy levels can dictate the kind of self-care we feel up to doing. Sometimes we can do all our laundry and go on a long hike and socialize with a bunch of people and really actively prioritize our needs, and sometimes we can't get out of bed! Self-care suggestions that don't fit your current energy level aren't gonna be useful to you!</p>
+    </div>
+  </section>
+
+<footer>
+  <a href="https://validator.w3.org/check?uri=referer" target="_blank">Valid HTML 5</a>
+  <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">Valid CSS</a>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
